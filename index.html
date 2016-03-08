@@ -100,21 +100,31 @@ border-left: 3px solid #999;
 }
 
 li {
-margin-left: -12px;
 padding-bottom: 5px;
 position: relative;
 padding-left: 45px;
 }
 
 .bullet {
-width: 15px;
-    height: 15px;
+box-sizing: border-box;
+width: 22px;
+    height: 22px;
     border: 3px solid #999;
     border-radius: 50%;
-    margin: 9px 25px 35px 0px;
+    margin: 9px 25px 35px -12px;
     background: #fff;
 position: absolute;
     left: 0px;
+
+transition: border-width.25s ease-in-out;
+}
+
+a:hover .bullet {
+border-width: 11px;
+}
+
+a:visited .bullet {
+background: #ddd;
 }
 
 p, li {
@@ -139,7 +149,7 @@ tt {
 
 
 a:hover {
-	opacity: 0.6;
+//	opacity: 0.6;
 	text-decoration: none;
 }
 
@@ -186,18 +196,18 @@ You can find me on <a href="https://github.com/grothkopp">github</a>, <a href="h
 <p>
 <b>Projects:</b>
 <ul>
-<li><div class="bullet"></div><a href="http://altruja.de">altruja.de</a><span class="misc">online fundraising (my company)</span></li>
-<li><div class="bullet"></div><a href="http://goosh.org">goosh.org</a><span class="misc">use google like a unix shell</span></li>
+<li><a href="http://altruja.de"><div class="bullet"></div>altruja.de</a><span class="misc">online fundraising (my company)</span></li>
+<li><a href="http://goosh.org"><div class="bullet"></div>goosh.org</a><span class="misc">use google like a unix shell</span></li>
 </ul>
 </p>
 
 <p>
 <b>Source Code:</b>
 <ul>
-<li><div class="bullet"></div><a href="https://github.com/grothkopp/PHPCliWrapper">PHPCliWrapper</a><span class="misc">a library for building php shells</span></li>
-<li><div class="bullet"></div><a href="https://github.com/grothkopp/sortDownloads.app">sortDownloads.app</a><span class="misc">OS X app, keeps your downloads sorted</span></li>
-<li><div class="bullet"></div><a href="./goosh.js">goosh.js</a><span class="misc">goosh.org sourcecode</span></li>
-<li><div class="bullet"></div><a href="./shortcuts.zip">shortcuts.zip</a><span class="misc">keyboard shortcuts google chrome extension </span></li>
+<li><a href="https://github.com/grothkopp/PHPCliWrapper"><div class="bullet"></div>PHPCliWrapper</a><span class="misc">a library for building php shells</span></li>
+<li><a href="https://github.com/grothkopp/sortDownloads.app"><div class="bullet"></div>sortDownloads.app</a><span class="misc">OS X app, keeps your downloads sorted</span></li>
+<li><a href="./goosh.js"><div class="bullet"></div>goosh.js</a><span class="misc">goosh.org sourcecode</span></li>
+<li><a href="./shortcuts.zip"><div class="bullet"></div>shortcuts.zip</a><span class="misc">keyboard shortcuts google chrome extension </span></li>
 </ul>
 </p>
 <p>
